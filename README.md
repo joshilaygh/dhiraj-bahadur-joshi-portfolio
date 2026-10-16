@@ -19,6 +19,6 @@ npx serve .
 
 ## Deploy to Vercel
 
-Import the repository into Vercel, leave the framework preset as `Other`, and deploy with no build command. To use a custom domain, add a domain you own in the hosting provider and update its DNS records as instructed; `nirajpaudel.com` is an existing third-party domain and is not configured by this project.
+Import the repository into Vercel, leave the framework preset as `Other`, and deploy with no build command. To use a custom domain, add a domain you own in the hosting provider and update its DNS records as instructed.
 
 The contact links use the email address, phone number, LinkedIn profile, and GitHub profile supplied in the CV. No credentials or private data are required by this site.
