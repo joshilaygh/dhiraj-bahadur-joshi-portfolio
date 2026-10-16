@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio of Dhiraj Bahadur Joshi, a web developer based in Auckland, New Zealand." />
+    <meta name="theme-color" content="#0d1117" />
+    <title>Dhiraj Joshi | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Dhiraj Joshi home">
+          <span class="brand-mark">DJ</span>
+          <span>Dhiraj Joshi</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#about">About</a>
+          <a class="nav-cta" href="mailto:joshjoshilay@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero section">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> Available for software opportunities</p>
+            <h1>Building useful software<br /><em>with thoughtful details.</em></h1>
+            <p class="hero-summary">I’m Dhiraj, a web developer in Auckland. I turn real-world problems into clear, reliable products with Java, Spring Boot, ASP.NET, React, and modern cloud tooling.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:joshjoshilay@gmail.com">Get in touch <span>↗</span></a>
+              <a class="button button-quiet" href="#work">See my work <span>↓</span></a>
+            </div>
+            <div class="quick-links">
+              <a href="https://github.com/joshilaygh" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+              <a href="https://www.linkedin.com/in/dhiraj-bahadur-joshi-48987b242" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+              <a href="tel:+64273131455">+64 27 313 1455</a>
+            </div>
+          </div>
+          <div class="hero-card" aria-label="Profile introduction">
+            <div class="card-grid"></div>
+            <div class="portrait">DJ</div>
+            <div class="hero-card-caption">
+              <span>Based in</span>
+              <strong>Auckland, NZ</strong>
+            </div>
+            <div class="hero-card-number">01</div>
+          </div>
+        </section>
+
+        <section class="ticker" aria-label="Core technologies">
+          <div class="ticker-track">
+            <span>JAVA</span><i>✳</i><span>SPRING BOOT</span><i>✳</i><span>REACT</span><i>✳</i><span>ASP.NET</span><i>✳</i><span>POSTGRESQL</span><i>✳</i><span>JAVA</span><i>✳</i><span>SPRING BOOT</span><i>✳</i><span>REACT</span><i>✳</i><span>ASP.NET</span><i>✳</i><span>POSTGRESQL</span>
+          </div>
+        </section>
+
+        <section id="work" class="section work-section">
+          <div class="section-heading">
+            <p class="eyebrow">Selected work</p>
+            <h2>Projects that solve<br /><em>practical problems.</em></h2>
+            <p class="section-intro">A selection of projects spanning full-stack product development, workflow design, and backend engineering.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card project-featured">
+              <div class="project-visual visual-findit"><span class="visual-label">01 / 04</span><div class="visual-window"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span><div class="window-content"><span class="fake-line line-long"></span><span class="fake-line line-short"></span><div class="fake-card"></div></div></div></div>
+              <div class="project-info"><p class="project-type">Full-stack platform · AIS</p><h3>FindIt</h3><p>A lost and found platform that helps people report items, discover matches, exchange messages, and reunite belongings with their owners.</p><div class="tag-list"><span>ASP.NET</span><span>React</span><span>PostgreSQL</span><span>SignalR</span></div></div>
+            </article>
+            <article class="project-card">
+              <div class="project-visual visual-payroll"><span class="visual-label">02 / 04</span><div class="payroll-bars"><b></b><b></b><b></b><b></b><b></b></div><span class="payroll-total">$24,680</span></div>
+              <div class="project-info"><p class="project-type">Business application · AIS</p><h3>Payroll Application</h3><p>A secure payroll prototype shaped around New Zealand tax, KiwiSaver, public holiday, and employee-role workflows.</p><div class="tag-list"><span>C#</span><span>ASP.NET MVC</span><span>SQL</span></div></div>
+            </article>
+            <article class="project-card">
+              <div class="project-visual visual-todo"><span class="visual-label">03 / 04</span><div class="todo-checks"><span>✓</span><span>✓</span><span>○</span><span>○</span></div><div class="todo-label">Plan. Focus. Ship.</div></div>
+              <div class="project-info"><p class="project-type">Full-stack application · AIS</p><h3>Todo Application</h3><p>A collaborative task manager with authentication, CRUD operations, GitHub Kanban workflow, CI/CD, and cloud deployment.</p><div class="tag-list"><span>React</span><span>Django REST</span><span>Vercel</span></div></div>
+            </article>
+            <article class="project-card">
+              <div class="project-visual visual-hrms"><span class="visual-label">04 / 04</span><div class="code-lines"><span>GET /employees</span><span>200 OK</span><span>POST /leave/request</span><span>201 CREATED</span></div></div>
+              <div class="project-info"><p class="project-type">Backend system · Digi Hub</p><h3>HRMS</h3><p>Human Resources Management System backend work, including database integration, API testing, debugging, and issue resolution.</p><div class="tag-list"><span>Java</span><span>Spring Boot</span><span>Swagger</span></div></div>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience" class="section experience-section">
+          <div class="section-heading compact"><p class="eyebrow">Experience</p><h2>Growing through<br /><em>every challenge.</em></h2></div>
+          <div class="timeline">
+            <article class="timeline-item"><div class="timeline-date">MAY — AUG 2025</div><div><h3>Software Developer Intern <span>↗</span></h3><p class="company">Payroll Ekaa Solutions Limited · New Zealand</p><p>Helped design a C# ASP.NET MVC payroll prototype, from requirements research and data modelling to administration, employee profile, and payroll processing workflows.</p></div></article>
+            <article class="timeline-item"><div class="timeline-date">NOV 2022 — JUL 2024</div><div><h3>Junior Java Developer <span>↗</span></h3><p class="company">Digi Hub Pvt. Ltd. · Kathmandu, Nepal</p><p>Built HRMS backend features with senior developers and testers, using ORM techniques and SQL while resolving development and post-deployment issues.</p></div></article>
+            <article class="timeline-item"><div class="timeline-date">NOV 2022 — MAY 2023</div><div><h3>Java Developer Trainee <span>↗</span></h3><p class="company">Digi Hub Pvt. Ltd. · Kathmandu, Nepal</p><p>Strengthened Java and Spring Boot skills through practical modules, feedback cycles, and software development best practices.</p></div></article>
+          </div>
+        </section>
+
+        <section id="about" class="section about-section">
+          <div class="about-intro"><p class="eyebrow">A little more about me</p><h2>Curious by nature.<br /><em>Useful by design.</em></h2></div>
+          <div class="about-copy"><p>I enjoy working at the intersection of people, systems, and technology. My earlier experience in marketing taught me how to listen closely, communicate clearly, and understand what people actually need — skills I now bring to software development.</p><p>I’m currently completing a Master of Information Technology at Auckland Institute of Studies, with a focus on cloud application development and CI/CD.</p><a class="text-link" href="mailto:joshjoshilay@gmail.com">Start a conversation <span>↗</span></a></div>
+        </section>
+
+        <section class="section skills-section">
+          <div class="section-heading compact"><p class="eyebrow">Toolkit</p><h2>Tools I use to<br /><em>make things work.</em></h2></div>
+          <div class="skills-list"><div><span>01</span><h3>Languages</h3><p>Java · C# · C/C++ · Python · JavaScript</p></div><div><span>02</span><h3>Frameworks</h3><p>Spring Boot · ASP.NET · React · Django · Node.js</p></div><div><span>03</span><h3>Data & cloud</h3><p>PostgreSQL · MySQL · Azure · AWS · Vercel</p></div><div><span>04</span><h3>Ways of working</h3><p>Git · CI/CD · ORM · Postman · Agile collaboration</p></div></div>
+        </section>
+
+        <section class="contact-section section">
+          <p class="eyebrow">Have a role or project in mind?</p><h2>Let’s make something<br /><em>worth finding.</em></h2><a class="contact-email" href="mailto:joshjoshilay@gmail.com">joshjoshilay@gmail.com <span>↗</span></a>
+        </section>
+      </main>
+
+      <footer class="site-footer"><span>© 2026 Dhiraj Bahadur Joshi</span><span>Auckland, New Zealand</span><a href="#top">Back to top ↑</a></footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
