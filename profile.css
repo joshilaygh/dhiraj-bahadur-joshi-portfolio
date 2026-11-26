@@ -339,21 +339,6 @@ a {
   inset: 54px;
 }
 
-.hero-art-index {
-  position: absolute;
-  top: 19px;
-  left: 3%;
-  z-index: 2;
-  color: #4a665a;
-  font: 500 10px "DM Mono", monospace;
-  letter-spacing: .12em;
-}
-
-.hero-art-index span {
-  margin-left: 9px;
-  color: var(--accent);
-}
-
 .portrait-frame {
   position: absolute;
   top: 5%;
@@ -377,38 +362,38 @@ a {
 }
 
 .featured-note {
-  position: absolute;
-  bottom: 1%;
-  left: -4%;
-  z-index: 3;
-  width: 238px;
-  min-height: 120px;
-  padding: 17px 19px;
+  display: flex;
+  width: min(1160px, 100%);
+  min-height: 62px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto 12px;
+  padding: 14px 0;
   border: 0;
-  border-left: 3px solid var(--accent);
-  background: var(--surface);
-  box-shadow: 0 12px 35px #172a3017;
+  border-top: 1px solid #172a3025;
+  border-bottom: 1px solid #172a3025;
+  background: transparent;
   text-align: left;
   cursor: pointer;
 }
 
-.featured-note span,
 .featured-note em {
-  color: #687472;
-  font: 500 8px "DM Mono", monospace;
-  letter-spacing: .08em;
+  flex: 0 0 auto;
+  color: var(--accent);
+  font: 500 9px "DM Mono", monospace;
+  font-style: normal;
+  white-space: nowrap;
 }
 
 .featured-note strong {
-  display: block;
-  margin: 8px 0;
-  font-size: 11px;
+  margin: 0;
+  font-size: 12px;
   line-height: 1.45;
 }
 
-.featured-note em {
+.featured-note:hover strong {
   color: var(--accent);
-  font-style: normal;
 }
 
 .hero-sticker {
@@ -1601,14 +1586,6 @@ a.project-card:hover {
     border-radius: 43% 43% 12px 12px;
   }
 
-  .featured-note {
-    bottom: 0;
-    left: 0;
-    width: min(205px, 58%);
-    min-height: 112px;
-    padding: 13px 14px;
-  }
-
   .featured-note strong {
     font-size: 10px;
   }
@@ -1815,10 +1792,6 @@ a.project-card:hover {
 
   .hero-art-orbit {
     width: 270px;
-  }
-
-  .featured-note {
-    width: 178px;
   }
 
   .hero-sticker {
