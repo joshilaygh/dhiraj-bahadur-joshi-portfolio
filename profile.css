@@ -376,33 +376,6 @@ a {
   filter: saturate(.88);
 }
 
-.portrait-caption {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 38px 20px 18px;
-  background: linear-gradient(transparent, #172a30e8);
-  color: #fff;
-  font: 500 9px "DM Mono", monospace;
-}
-
-.portrait-caption span,
-.portrait-caption strong {
-  display: block;
-}
-
-.portrait-caption span {
-  margin-bottom: 5px;
-  color: #d9e8ad;
-  letter-spacing: .09em;
-  text-transform: uppercase;
-}
-
-.portrait-caption strong {
-  font-size: 12px;
-}
-
 .featured-note {
   position: absolute;
   bottom: 1%;
