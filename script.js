@@ -3,7 +3,8 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     const target = document.querySelector(link.getAttribute('href'));
     if (!target) return;
     event.preventDefault();
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+    target.scrollIntoView({ behavior, block: 'start' });
     document.querySelector('.site-nav')?.classList.remove('is-open');
     document.querySelector('.menu-toggle')?.setAttribute('aria-expanded', 'false');
   });

@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Dhiraj Bahadur Joshi is a software developer based in Auckland, New Zealand." />
+    <meta name="theme-color" content="#f5f6f1" />
     <link rel="canonical" href="https://dhirajbahadurjoshi.com.np/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Dhiraj Joshi — Software Developer" />
     <meta property="og:description" content="Dhiraj Bahadur Joshi is a software developer based in Auckland, New Zealand." />
     <meta property="og:url" content="https://dhirajbahadurjoshi.com.np/" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://dhirajbahadurjoshi.com.np/assets/profile-photo.jpg" />
+    <meta property="og:image:alt" content="Portrait of Dhiraj Bahadur Joshi" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Dhiraj Joshi — Software Developer" />
     <meta name="twitter:description" content="Dhiraj Bahadur Joshi is a software developer based in Auckland, New Zealand." />
+    <meta name="twitter:image" content="https://dhirajbahadurjoshi.com.np/assets/profile-photo.jpg" />
     <title>Dhiraj Joshi — Software Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="visual.css" />
+    <link rel="stylesheet" href="profile.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="header-inner">
         <a class="monogram" href="#hero-section" aria-label="Dhiraj Joshi home">DJ</a>
@@ -30,25 +35,25 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section id="hero-section" class="hero-section page-width">
-        <div class="hero-topline"><span>Portfolio <i>·</i> 2026</span><span class="hero-location"><b></b> Auckland, New Zealand</span></div>
+        <div class="hero-topline"><span>Dhiraj Bahadur Joshi <i>·</i> Software developer</span><span class="hero-location"><b></b> Auckland, New Zealand <span class="availability">Open to opportunities</span></span></div>
         <div class="hero-layout">
           <div class="hero-copy">
             <p class="eyebrow">Software developer · Web &amp; backend</p>
             <h1>Dhiraj<br /><em>Joshi</em><span class="hero-period">.</span></h1>
-            <p class="hero-lede">I turn real-world problems into dependable software — from Java backend systems to thoughtful full-stack applications.</p>
-            <div class="hero-actions"><a class="hero-primary" href="#research-section">Explore my work <span>↘</span></a><a class="hero-secondary" href="mailto:joshjoshilay@gmail.com">Let’s talk <span>↗</span></a></div>
+            <p class="hero-lede">I build dependable web and backend software, turning real-world requirements into clear, useful tools.</p>
+            <div class="hero-actions"><a class="hero-primary" href="#research-section">See selected work <span>↘</span></a><a class="hero-secondary" href="mailto:joshjoshilay@gmail.com">Get in touch <span>↗</span></a></div>
             <div class="hero-socials"><a href="https://github.com/joshilaygh" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/dhiraj-bahadur-joshi-48987b242" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="resume.html">Full resume ↗</a></div>
           </div>
           <div class="hero-art">
-            <div class="hero-art-orbit"></div><div class="hero-art-index">01<span>—</span></div>
-            <div class="portrait-frame"><img src="assets/profile-photo.jpg" alt="Dhiraj Bahadur Joshi" /><div class="portrait-caption"><span>Building with purpose</span><strong>Software Developer</strong></div></div>
+            <div class="hero-art-orbit" aria-hidden="true"></div><div class="hero-art-index" aria-hidden="true">01<span>—</span></div>
+            <div class="portrait-frame"><img src="assets/profile-photo.jpg" alt="Portrait of Dhiraj Bahadur Joshi" fetchpriority="high" /><div class="portrait-caption"><span>Auckland, New Zealand</span><strong>Software developer</strong></div></div>
             <button class="featured-note" type="button" data-open-note><span>FIELD NOTE / 001</span><strong>Reliable software starts with understanding the problem.</strong><em>Read note ↗</em></button>
-            <div class="hero-sticker" aria-hidden="true">BUILD<br />BETTER<br /><span>✳</span></div>
+            <div class="hero-sticker" aria-hidden="true">BUILD<br />WITH<br />PURPOSE<span>✳</span></div>
           </div>
         </div>
-        <div class="hero-bottom"><span>Scroll to explore</span><a href="#about-section" aria-label="Scroll to about section">↓</a><div class="hero-stats"><div><strong>02<span>+</span></strong><small>Years in software</small></div><div><strong>04</strong><small>Selected projects</small></div><div><strong>02</strong><small>Qualifications</small></div></div></div>
+        <div class="hero-bottom"><span>Scroll to explore</span><a href="#about-section" aria-label="Scroll to about section">↓</a><div class="hero-proof"><div><span>01 / BACKEND</span><strong>Java · Spring Boot</strong></div><div><span>02 / FULL STACK</span><strong>React · ASP.NET</strong></div><div><span>03 / DATA</span><strong>PostgreSQL · MySQL</strong></div></div></div>
       </section>
 
       <section id="about-section" class="about-section page-width split-section">
@@ -80,10 +85,10 @@
       <section id="research-section" class="projects-section page-width">
         <div class="section-heading"><div><p class="eyebrow">Selected projects</p><h2>Small products.<br /><em>Real problems.</em></h2></div><p>Software built to be useful, clear, and a little easier to live with.</p></div>
         <div class="project-grid">
-          <a class="project-card findit-card" href="https://lost-and-found-55q.pages.dev/" target="_blank" rel="noreferrer"><div class="project-art"><span class="project-index">01 / AIS</span><div class="findit-ui"><span class="findit-symbol">⌕</span><strong>FindIt</strong><small>LOST &amp; FOUND</small><div class="ui-lines"><i></i><i></i><i></i></div></div><span class="project-art-caption">Find what matters.</span></div><div class="project-card-info"><div><p>FULL-STACK PLATFORM</p><h3>FindIt <span>↗</span></h3></div><p>A lost and found platform to report items, discover matches, exchange messages, and reunite belongings with their owners.</p><div class="tags"><span>ASP.NET</span><span>React</span><span>PostgreSQL</span><span>SignalR</span></div></div></a>
-          <article class="project-card payroll-card"><div class="project-art"><span class="project-index">02 / AIS</span><div class="payroll-ui"><small>PAYROLL APPLICATION</small><strong>Pay run<span> · New Zealand</span></strong><div class="payroll-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="payroll-ui-foot"><span>EMPLOYEES</span><b>Profiles</b><span>PAYROLL</span><b>Workflow</b></div></div><span class="project-art-caption">Payroll Application</span></div><div class="project-card-info"><div><p>PAYROLL WORKFLOW</p><h3>Payroll Application</h3></div><p>Database schema and secure authentication for payroll workflows covering NZ tax rules, KiwiSaver, public holidays, and employee roles.</p><div class="tags"><span>ASP.NET MVC</span><span>Authentication</span><span>Payroll</span></div></div></article>
-          <article class="project-card todo-card"><div class="project-art"><span class="project-index">03 / AIS</span><div class="todo-ui"><small>MY TASKS <b>3 TODAY</b></small><div><i class="checked">✓</i><span>Plan sprint goals</span></div><div><i class="checked">✓</i><span>Review project notes</span></div><div><i></i><span>Ship the next feature</span></div><div><i></i><span>Take a well-earned break</span></div><span class="todo-add">+ Add a task</span></div><span class="project-art-caption">A little more organized.</span></div><div class="project-card-info"><div><p>FULL-STACK WEB APP</p><h3>Todo Application</h3></div><p>A task manager with authentication and CRUD features, planned with GitHub Kanban and deployed with GitHub Actions and Vercel.</p><div class="tags"><span>React</span><span>Django REST</span><span>GitHub Actions</span></div></div></article>
-          <article class="project-card hrms-card"><div class="project-art"><span class="project-index">04 / DIGI HUB</span><div class="hrms-ui"><div class="hrms-sidebar"><b>HR</b><i></i><i></i><i></i><i></i></div><div class="hrms-main"><small>PEOPLE OVERVIEW</small><strong>Team dashboard</strong><div class="hrms-profiles"><i>AP</i><i>SK</i><i>RM</i><i>+12</i></div><div class="hrms-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><span class="project-art-caption">People, made easier.</span></div><div class="project-card-info"><div><p>BACKEND SYSTEM</p><h3>Human Resources Management System</h3></div><p>Java and Spring Boot backend development, database integration, issue resolution, and API testing with Postman and Swagger.</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>Postman</span><span>Swagger</span></div></div></article>
+          <a class="project-card findit-card" href="https://lost-and-found-55q.pages.dev/" target="_blank" rel="noreferrer"><div class="project-art" aria-hidden="true"><span class="project-index">01 / AIS</span><div class="findit-ui"><span class="findit-symbol">⌕</span><strong>FindIt</strong><small>LOST &amp; FOUND</small><div class="ui-lines"><i></i><i></i><i></i></div></div><span class="project-art-caption">Find what matters.</span></div><div class="project-card-info"><div><p>CAPSTONE PROJECT · AIS</p><h3>FindIt <span>↗</span></h3></div><p>A lost and found platform to report items, discover matches, exchange messages, and reunite belongings with their owners.</p><div class="tags"><span>ASP.NET</span><span>React</span><span>PostgreSQL</span><span>SignalR</span></div></div></a>
+          <article class="project-card payroll-card"><div class="project-art" aria-hidden="true"><span class="project-index">02 / AIS</span><div class="payroll-ui"><small>PAYROLL APPLICATION</small><strong>Pay run<span> · New Zealand</span></strong><div class="payroll-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="payroll-ui-foot"><span>EMPLOYEES</span><b>Profiles</b><span>PAYROLL</span><b>Workflow</b></div></div><span class="project-art-caption">Payroll Application</span></div><div class="project-card-info"><div><p>ACADEMIC PROJECT · AIS</p><h3>Payroll Application</h3></div><p>Database schema and secure authentication for payroll workflows covering NZ tax rules, KiwiSaver, public holidays, and employee roles.</p><div class="tags"><span>ASP.NET MVC</span><span>Authentication</span><span>Payroll</span></div></div></article>
+          <article class="project-card todo-card"><div class="project-art" aria-hidden="true"><span class="project-index">03 / AIS</span><div class="todo-ui"><small>MY TASKS <b>3 TODAY</b></small><div><i class="checked">✓</i><span>Plan sprint goals</span></div><div><i class="checked">✓</i><span>Review project notes</span></div><div><i></i><span>Ship the next feature</span></div><div><i></i><span>Take a well-earned break</span></div><span class="todo-add">+ Add a task</span></div><span class="project-art-caption">A little more organized.</span></div><div class="project-card-info"><div><p>ACADEMIC PROJECT · AIS</p><h3>Todo Application</h3></div><p>A task manager with authentication and CRUD features, planned with GitHub Kanban and deployed with GitHub Actions and Vercel.</p><div class="tags"><span>React</span><span>Django REST</span><span>GitHub Actions</span></div></div></article>
+          <article class="project-card hrms-card"><div class="project-art" aria-hidden="true"><span class="project-index">04 / DIGI HUB</span><div class="hrms-ui"><div class="hrms-sidebar"><b>HR</b><i></i><i></i><i></i><i></i></div><div class="hrms-main"><small>PEOPLE OVERVIEW</small><strong>Team dashboard</strong><div class="hrms-profiles"><i>AP</i><i>SK</i><i>RM</i><i>+12</i></div><div class="hrms-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><span class="project-art-caption">People, made easier.</span></div><div class="project-card-info"><div><p>PROFESSIONAL PROJECT · DIGI HUB</p><h3>Human Resources Management System</h3></div><p>Java and Spring Boot backend development, database integration, issue resolution, and API testing with Postman and Swagger.</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>Postman</span><span>Swagger</span></div></div></article>
         </div>
       </section>
 
