@@ -482,7 +482,7 @@ a {
 
 .section-title h2,
 .section-heading h2,
-.education-line h2,
+.education-heading h2,
 .contact-section h2 {
   margin: 0;
   font-size: clamp(40px, 5vw, 70px);
@@ -492,8 +492,7 @@ a {
 }
 
 .section-title h2 em,
-.section-heading h2 em,
-.education-line h2 em {
+.section-heading h2 em {
   color: #75827d;
   font-style: normal;
 }
@@ -792,16 +791,6 @@ a.project-card:hover {
 .payroll-card .project-art { background: #e6e1f1; }
 .todo-card .project-art { background: #f0dfd4; }
 .hrms-card .project-art { background: #dce8ed; }
-
-.project-index {
-  position: absolute;
-  top: 18px;
-  left: 19px;
-  z-index: 1;
-  color: #475854;
-  font: 500 8px "DM Mono", monospace;
-  letter-spacing: .12em;
-}
 
 .project-art-caption {
   position: absolute;
@@ -1154,35 +1143,54 @@ a.project-card:hover {
   background: #dfe9e1;
 }
 
-.education-line {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 32px;
-  margin-top: 47px;
+.education-heading h2 {
+  font-size: clamp(40px, 5vw, 70px);
 }
 
-.education-line h2 {
-  font-size: clamp(42px, 6vw, 76px);
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 42px;
 }
 
-.education-line p {
-  color: #a45e45;
+.education-entry {
+  min-width: 0;
+  padding: 26px 28px 28px;
+  border: 1px solid #d0dbd2;
+  background: var(--surface);
+}
+
+.education-entry .education-entry-period {
+  margin-bottom: 25px;
+  color: var(--accent);
   font: 500 9px "DM Mono", monospace;
+  letter-spacing: .08em;
   text-transform: uppercase;
 }
 
-.education-line .secondary-education {
-  margin-top: 22px;
-  color: var(--muted);
-  line-height: 1.8;
+.education-entry h3 {
+  margin: 0 0 14px;
+  font-size: clamp(20px, 2.2vw, 27px);
+  font-weight: 700;
+  letter-spacing: -.055em;
+  line-height: 1.2;
 }
 
-.education-meta {
+.education-entry p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.education-entry .education-institution {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.education-entry .education-location {
+  margin-top: 3px;
   color: var(--muted);
-  font: 500 9px/1.8 "DM Mono", monospace;
-  text-align: right;
-  text-transform: uppercase;
 }
 
 .contact-section {
@@ -1721,14 +1729,18 @@ a.project-card:hover {
     margin-top: 34px;
   }
 
-  .education-line {
-    display: block;
-    margin-top: 35px;
+  .education-list {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 30px;
   }
 
-  .education-meta {
-    margin-top: 22px;
-    text-align: left;
+  .education-entry {
+    padding: 22px;
+  }
+
+  .education-entry .education-entry-period {
+    margin-bottom: 20px;
   }
 
   .contact-section {
